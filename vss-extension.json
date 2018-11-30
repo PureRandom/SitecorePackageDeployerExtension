@@ -1,0 +1,42 @@
+{
+    "manifestVersion": 1,
+    "id": "sitecorePackageDeployer-extention",
+    "version": "0.0.5",
+    "name": "Sitecore Package Deployer",
+    "description": "This task runs the Sitecore Package Deployer on your Sitecore instance, then reports on it's progress",
+    "publisher": "cpateman",
+    "targets": [
+        {
+            "id": "Microsoft.VisualStudio.Services"
+        }
+    ],
+    "content": {
+        "details": {
+            "path": "README.md"
+        }
+    },
+    "categories": [
+        "Build and release"
+    ],
+    "icons": {
+        "default": "icon.png"        
+    },
+    "files": [
+        {
+            "path": "PackageDeployerTask"
+        }
+    ],
+    "contributions": [
+        {
+            "id": "custom-build-release-task",
+            "type": "ms.vss-distributed-task.task",
+            "targets": [
+                "ms.vss-distributed-task.tasks"
+            ],
+            "properties": {
+                "name": "PackageDeployerTask"
+            }
+        }
+    ],
+    "public":true
+}
