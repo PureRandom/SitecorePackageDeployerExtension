@@ -21,7 +21,7 @@ try {
 
     $SitecorePackageDeployerUrl = "$SitecoreUrl/sitecore/admin/startsitecorepackagedeployer.aspx$forcePackageDeployer"
     write-host "Invoking $SitecorePackageDeployerUrl"
-    Invoke-WebRequest -Uri $SitecorePackageDeployerUrl
+    Invoke-WebRequest -Uri $SitecorePackageDeployerUrl -UseBasicParsing
     write-host "**** - Deployer Run - **** "
 
     if ((-not [string]::IsNullOrEmpty($CheckPackageComplete)) -and ($CheckPackageComplete -eq 'true')) {

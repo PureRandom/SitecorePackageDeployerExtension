@@ -1,7 +1,7 @@
 {
     "manifestVersion": 1,
     "id": "sitecorePackageDeployer-extention",
-    "version": "0.0.5",
+    "version": "0.0.6",
     "name": "Sitecore Package Deployer",
     "description": "This task runs the Sitecore Package Deployer on your Sitecore instance, then reports on it's progress",
     "publisher": "cpateman",
